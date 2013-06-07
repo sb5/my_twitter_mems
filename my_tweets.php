@@ -1,6 +1,7 @@
 <?php
-include 'header.php';
-echo '<h2 style = "text-shadow: 2px 2px 2px #CCCCCC;">My Twitter Memories</h2>';
+//header is just link to stylesheet and jquery
+include 'myheader.php';
+echo '<h2 style = "text-shadow: 2px 2px 2px #CCCCCC;">My Twitter Memories</h2><h3>are you thinking of leaving the twiter world? Me too..anyways, maybe you should grab all of your tweets before u go?</h3>';
 if(isset($_GET['name'])){
 $name = htmlentities($_GET['name']);
 
@@ -29,17 +30,17 @@ echo '<div id ="img"></div><div class = "tweets">
 ';
 ?><script>
 $(document).ready(function() {
-    loadLatestTweet();
+    loadTweets();
 });
  
-    function loadLatestTweet(){
+    function loadTweets(){
     var _url = <?php echo "'". $url ."'"; ?>;
   
     // var url = 
     $.getJSON(_url,function(data){
     // var tweet = data[0].text;
   
-  
+	
 	var profileImg = data[0].user.profile_image_url_https;
 	
 	$("#img").html("<img src = '"+ profileImg +"'  alt = ''>");
@@ -49,7 +50,8 @@ $(document).ready(function() {
    // var date = dateArray[1]+' '+dateArray[2]+','+dateArray[5];
    	var tweet = data[i].text;
    	
-    $(".tweets").append('<p id = "'+ i +'">Date: '+date+' '+tweet+'</p>');}
+  //switch w/below for date addition  $(".tweets").append('<p id = "'+ i +'">Date: '+date+' '+tweet+'</p>');}
+  $(".tweets").append('<p id = "'+ i +'">'+tweet+'</p>');}
     });
 }
 </script>
