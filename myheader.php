@@ -15,11 +15,11 @@ $title = $_SERVER['PHP_SELF'];
 $title = str_replace('/','',$title);
 $title = explode('.',$title);
 $title = Ucfirst($title[0]);
-//put whatever after the | below for ur site
-echo $title; ?> | Stephen Breighner Photography</title>
 
-<style>body{margin: 20px:}.tweets, #img{text-align: center; }</style>
+echo $title; ?> | Stephen Breighner Photography</title>
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css" /> 
+
+<style>body{margin: 20px;}h2{font-family: zapfino;}h3{font-family: serif;font-size: small;}.tweets, #img{text-align: center; }</style>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 
 
