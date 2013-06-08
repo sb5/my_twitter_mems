@@ -16,9 +16,7 @@ if (isset($_GET['name'])) {
     curl_close($curl_handle);
 
 
-    echo '<div id ="img"></div><div class = "tweets">
-    <ul></ul></div>
-';
+    echo '<div id ="img"></div><div class = "tweets"></div>';
     ?><script>
         $(document).ready(function() {
             loadTweets();
