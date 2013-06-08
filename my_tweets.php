@@ -14,7 +14,7 @@ if (isset($_GET['name'])) {
             $.getJSON(_url, function(data) {
                 var profileImg = data[0].user.profile_image_url_https;
                 $("#img").html("<img src = '" + profileImg + "'  alt = ''>");
-                for (i = 0; i < 300000; i++) {
+                for (i = 0; i < data.length; i++) {
                     var tweet = data[i].text;
                     $(".tweets").append('<p id = "' + i + '">' + tweet + '</p>');
                 }
