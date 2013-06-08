@@ -17,9 +17,10 @@ $title = explode('.',$title);
 $title = Ucfirst($title[0]);
 
 echo $title; ?> | Stephen Breighner Photography</title>
-<link rel="stylesheet" href="css/bootstrap.css" type="text/css" /> 
 
-<style>body{margin: 20px;}h2{font-family: zapfino;}h3{font-family: serif;font-size: small;}.tweets, #img{text-align: center; }</style>
+
+<style>body{background-image: url(http://1-ps.googleusercontent.com/h/www.javascriptbank.com/javascript/multi…tar_Background/xxstars.jpg,Mic.B4PzxN4m8R.jpg.pagespeed.ic.b6s-A1Ud0e.webp);margin: 20px;font-family: helvetica, arial, serif; color: rgb(100, 100, 100);
+}h2{font-family: zapfino;color: black;}h3{font-family: serif;font-size: small;color: black;}.tweets, #img{text-align: center; }</style>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 
 
